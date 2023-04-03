@@ -7,6 +7,6 @@ namespace GranHotelApi.Models
         public int Id { get; set; }
         public bool Ocupada { get; set; }
 
-        public ICollection<Huesped> Huespedes { get; set; }
+        public ICollection<Huesped>? Huespedes { get; set; }
     }
 }

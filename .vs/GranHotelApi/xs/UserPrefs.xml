@@ -1,15 +1,17 @@
 ﻿<Properties StartupConfiguration="{F8377427-7A8F-429D-9C2C-98BC2A60141E}|https">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="README.md">
     <Files>
-      <File FileName="Controllers/HabitacionesController.cs" Line="30" Column="10" />
-      <File FileName="Controllers/HuespedesController.cs" Line="34" Column="57" />
-      <File FileName="Services/HabitacionService.cs" Line="20" Column="10" />
-      <File FileName="DesignTimeDbContextFactory.cs" Line="6" Column="1" />
-      <File FileName="Repositories/HuespedRepository.cs" Line="14" Column="10" />
-      <File FileName="Services/IHuespedService.cs" Line="13" Column="58" />
-      <File FileName="Services/HuespedService.cs" Line="41" Column="50" />
-      <File FileName="Repositories/HabitacionRepository.cs" Line="23" Column="59" />
-      <File FileName="Program.cs" Line="38" Column="24" />
+      <File FileName="Controllers/HabitacionesController.cs" />
+      <File FileName="Controllers/HuespedesController.cs" />
+      <File FileName="Services/HabitacionService.cs" />
+      <File FileName="DesignTimeDbContextFactory.cs" />
+      <File FileName="Repositories/HuespedRepository.cs" />
+      <File FileName="Services/IHuespedService.cs" />
+      <File FileName="Services/HuespedService.cs" />
+      <File FileName="Repositories/HabitacionRepository.cs" />
+      <File FileName="Program.cs" Line="44" Column="2" />
+      <File FileName=".gitattributes" Line="6" Column="4" />
+      <File FileName="README.md" Line="3" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -20,7 +22,7 @@
               <Node name="Properties" expanded="True" />
               <Node name="Repositories" expanded="True" />
               <Node name="Services" expanded="True" />
-              <Node name="Program.cs" selected="True" />
+              <Node name="README.md" selected="True" />
             </Node>
           </Node>
         </State>

@@ -11,6 +11,6 @@ namespace GranHotelApi.Models
         public DateTime Ingreso { get; set; }
         public DateTime? Salida { get; set; }
 
-        public Habitacion Habitacion { get; set; }
+        public Habitacion? Habitacion { get; set; }
     }
 }

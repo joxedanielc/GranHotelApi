@@ -11,10 +11,10 @@ using Microsoft.Extensions.Hosting;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Agregar la configuración
+builder.Services.AddCors();
+
 builder.Configuration.AddJsonFile("appsettings.json");
 
-// Configurar los servicios
 builder.Services.AddControllers();
 builder.Services.AddDbContext<GranHotelContext>(options =>
     options.UseMySql(builder.Configuration.GetConnectionString("DefaultConnection"), ServerVersion.AutoDetect(builder.Configuration.GetConnectionString("DefaultConnection"))));
@@ -27,8 +27,13 @@ builder.Services.AddScoped<IHuespedRepository, HuespedRepository>();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// Configurar la aplicación
 var app = builder.Build();
+
+app.UseCors(builder => builder
+    .WithOrigins("http://localhost:3000")
+    .AllowAnyMethod()
+    .AllowAnyHeader()
+    .AllowCredentials());
 
 if (app.Environment.IsDevelopment())
 {

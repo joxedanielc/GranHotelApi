@@ -38,9 +38,8 @@ namespace GranHotelApi.Services
         public async Task<IEnumerable<Huesped>> GetAllCurrentHuespedes()
         {
             IEnumerable<Huesped> huespedes = await _repository.GetAllAsync();
-            IEnumerable<Huesped> currentHuespedes = huespedes.Where(x => x.Habitacion.Ocupada == true);
-
-            return currentHuespedes;
+            
+            return huespedes;
         }
     }
 }

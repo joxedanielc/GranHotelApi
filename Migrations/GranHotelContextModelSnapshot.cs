@@ -78,7 +78,6 @@ namespace GranHotelApi.Migrations
                 {
                     b.Navigation("Huespedes");
                 });
-#pragma warning restore 612, 618
         }
     }
 }

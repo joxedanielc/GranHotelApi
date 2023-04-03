@@ -45,10 +45,11 @@ namespace GranHotelApi.Controllers
             huesped.Ingreso = DateTime.UtcNow;
             await _huespedService.AddAsync(huesped);
 
-            return CreatedAtAction("", new { id = huesped.Id }, huesped);
+            return Ok(new { id = huesped.Id });
+
         }
 
-        [HttpPost("CheckOut/{id}")]
+        [HttpPut("CheckOut/{id}")]
         public async Task<IActionResult> CheckOutHuesped(int id)
         {
             var huesped = await _huespedService.GetByIdAsync(id);
